@@ -1,37 +1,34 @@
-package assisted_Practice;
-
-import java.util.Scanner;
+package searchingProgram;
 
 public class LinearSearch {
 
 	public static void main(String[] args) {
-		int[] arr = {10,20,30,40,50};
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the element to be searched");
-        int searchValue = sc.nextInt();
-        
-        int result = linearing(arr,searchValue);
-        if(result==-1){
-
-                System.out.println("Element not in the array");
-            } else {
-
-                System.out.println("Element found at "+result+" and the search key is "+arr[result]);
-            }
-        }
-
-public static int linearing(int arr[], int x) {
-
-    int arrlength = arr.length;
-    for (int i = 0; i < arrlength - 1; i++) {
-
-        if (arr[i] == x) {
-            return i;
-         }
-     }
-            return -1;
-
+		int ele=31;
+		int[] a=new int[10];
+		a[0]=29;
+		a[1]=33;
+		a[2]=456;
+		a[3]=67;
+		a[4]=90;
+		a[5]=31;
+		a[6]=754;
+		a[7]=656;
+		a[8]=67;
+		a[9]=88;
+		for(int i=1;i<a.length;i++)
+		{
+			System.out.println(a[i]);
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==ele)
+			{
+				System.out.println("found");
+			}
+			else
+			{
+				System.out.println("not found");
 	}
-
+		}
+	}
 }
